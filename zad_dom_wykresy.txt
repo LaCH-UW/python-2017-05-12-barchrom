@@ -7,15 +7,20 @@
              "ziemia-obiecana-tom-pierwszy.txt"]
    titles = ["Lord Jim", "Przedwiośnie", "Sklepy cynamonowe", "Szewcy", "Ziemia obiecana Tom I"]
 
-   Przerób funkcję generującą wykres liniowy tak, aby można ją wykorzystać dla list różnej długości.
+   Rozwiązanie oddaj w postaci funkcji color_lines(texts) w pliku line_1.py
+   Możesz użyć listy z nazwami wbudowanych kolorów matplotlib, lub generować własne kolory. 
+   https://matplotlib.org/api/colors_api.html 
    (Wykres liniowy ma być analogiczny do wykresu z przykładu wykresu liniowego)
 
 2. Stwórz wykres linowy z tej samej listy tekstów co wyżej, tyle że zliczający
    liczbę wystąpień jednego słowa we wszystkich tekstach z listy. Teksty podajemy na osi x jako xticks.
+   Rozwiązanie oddaj w postaci funkcji one_word(results, texts_titles, word) w pliku line_2.py
 
 3. Stwórz wykres słupkowy zawierający liczbę wystąpień słów z listy
-   slowa = ['Wokulski', 'Rzecki', 'subiekt', 'handel', 'sklep']
-   w tomie I "Lalki" tak, by pary wyników dla poszczególnych słów występowały w słupkach ustawionych obok siebie.
+   words = ['Wokulski', 'Rzecki', 'subiekt', 'handel', 'sklep']
+   w tomie I "Lalki" tak, by pary wyników (tzn. częstość występowania w tomie I i II) 
+   dla poszczególnych słów występowały w słupkach ustawionych obok siebie.
+   Rozwiązanie oddaj w postaci funkcji bar_chart(title1, title2, words) w pliku bar.py
 
    Podpowiedź 1:
    Używamy funkcji plt.bar(), której podajemy argumenty tak jak funkcji plt.scatter()
@@ -27,10 +32,17 @@
 
 4. (Nieobowiązkowe, ale ciekawsze!)
    Pobierz korpus inaugural z bazy nltk (używając nltk.download()).
-   Dla niego opracuj wykres analogiczny do wykresu ze strony:
+   Dla niego opracuj dla pojedynczych słów wykres analogiczny do wykresu ze strony:
    https://books.google.com/ngrams
    (bazując ewentualnie na wykresie z z zadania 2).
    Warto porównać potem wyniki z wykresem Google dla wybranego słowa (lub słów) i danego zakresu lat :)
+   Rozwiązanie oddaj w pliku ngrams.py
 
    Jeśli chcesz, to rozszerz działanie wykresu o bigramy korzystając z funkcji bigrams() z nltk
    lub własnoręcznie napisanej funkcji (rekomendowane rozwiązanie!).
+   Co to bigramy?
+   Np. "United States", "great difference"
+   http://text-analytics101.rxnlp.com/2014/11/what-are-n-grams.html
+
+   Uwaga:
+      Dołącz legendę lub podpisy na wykresie - spraw, aby był czytelny :)
