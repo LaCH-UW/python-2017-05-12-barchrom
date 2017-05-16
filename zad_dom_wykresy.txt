@@ -18,7 +18,7 @@
 
 3. Stwórz wykres słupkowy zawierający liczbę wystąpień słów z listy
    words = ['Wokulski', 'Rzecki', 'subiekt', 'handel', 'sklep']
-   w tomie I "Lalki" tak, by pary wyników (tzn. częstość występowania w tomie I i II) 
+   w tomie I i II "Lalki" tak, by pary wyników (tzn. częstość występowania w tomie I i II) 
    dla poszczególnych słów występowały w słupkach ustawionych obok siebie.
    Rozwiązanie oddaj w postaci funkcji bar_chart(title1, title2, words) w pliku bar.py
 
